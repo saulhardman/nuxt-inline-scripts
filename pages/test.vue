@@ -6,6 +6,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Test'
+    }
+  }
+}
+</script>
+
 <style>
 .container {
   margin: 0 auto;
