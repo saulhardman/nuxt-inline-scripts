@@ -26,10 +26,19 @@ export default {
           'utf8'
         ),
         once: true
+      },
+      {
+        hid: 'sentry-js',
+        innerHTML: fs.readFileSync(
+          path.join(__dirname, 'critical/sentry.min.js'),
+          'utf8'
+        ),
+        once: true
       }
     ],
     __dangerouslyDisableSanitizersByTagID: {
-      'critical-js': ['innerHTML']
+      'critical-js': ['innerHTML'],
+      'sentry-js': ['innerHTML']
     }
   },
   /*

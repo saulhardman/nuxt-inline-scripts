@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "yarn critical && nuxt generate",
+    "build": "yarn sentry && yarn critical && nuxt generate",
     "generate": "nuxt generate",
+    "sentry": "download https://js.sentry-cdn.com/6266fa3576504a24adf82e8998e213a0.min.js > critical/sentry-loader.min.js",
     "critical": "rollup -c",
     "prettier": "prettier --ignore-path .gitignore '**/*.{js,vue,css,md}' --write",
     "eslint": "eslint --ignore-path .gitignore '**/*.{js,vue}'",
@@ -33,6 +34,7 @@
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
     "babel-eslint": "^10.0.1",
+    "download-cli": "^1.1.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
