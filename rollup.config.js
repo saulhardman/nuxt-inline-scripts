@@ -10,13 +10,5 @@ export default [
       file: path.join(CRITICAL_DIR, 'critical.min.js'),
       format: 'iife'
     }
-  },
-  {
-    input: path.join(CRITICAL_DIR, 'sentry.js'),
-
-    output: {
-      file: path.join(CRITICAL_DIR, 'sentry.min.js'),
-      format: 'iife'
-    }
   }
 ]

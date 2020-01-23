@@ -6,9 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "yarn sentry && yarn critical && nuxt generate",
+    "build": "yarn critical && nuxt generate",
     "generate": "nuxt generate",
-    "sentry": "download https://js.sentry-cdn.com/6266fa3576504a24adf82e8998e213a0.min.js > critical/sentry-loader.min.js",
     "critical": "rollup -c",
     "prettier": "prettier --ignore-path .gitignore '**/*.{js,vue,css,md}' --write",
     "eslint": "eslint --ignore-path .gitignore '**/*.{js,vue}'",
